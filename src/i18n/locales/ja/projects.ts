@@ -160,6 +160,66 @@ export default {
     ],
   },
 
+  'aster-drive': {
+    id: 'aster-drive',
+
+    tags: ['Rust', 'React', 'Self-Hosted', 'Cloud Storage', 'WebDAV', 'S3', 'SQLite'],
+
+    githubUrl: 'https://github.com/AptS-1547/AsterDrive',
+
+    language: 'Rust',
+
+    status: 'active',
+
+    license: 'MIT',
+    title: 'AsterDrive',
+    description: 'RustとReactで構築されたセルフホスト型クラウドストレージ',
+    longDescription:
+      'AsterDriveは、RustとReactで構築されたセルフホスト型クラウドストレージシステムです。フロントエンドパネルをサーバーに直接埋め込む単一バイナリ配布モデルを採用しつつ、マルチデータベース構成、プラガブルなストレージポリシー、WebDAV、公開共有、バージョン履歴、ごみ箱、サムネイル、4種類のアップロードモードを備えています。シンプルなデプロイ、拡張性、そしてモダンなファイルコラボレーション体験の両立を目指したプロジェクトです。',
+    features: [
+      'rust-embed によるフロントエンド埋め込みを含む単一バイナリ配布',
+      'SQLiteを標準採用し、MySQLとPostgreSQLにも対応',
+      'ローカルファイルシステムとS3互換オブジェクトストレージ向けのプラガブルなストレージポリシー',
+      'direct、chunked、presigned、presigned_multipart の4種類のアップロードモード',
+      'パスワード保護、有効期限、ダウンロード回数制限付きのファイル・フォルダ共有',
+      'WebDAVアカウント、ルートディレクトリ制限、DBロック、DeltaVサブセット対応を内蔵',
+      'バージョン履歴、ごみ箱、サムネイル、リソースロック、定期クリーンアップジョブ',
+      'ユーザー、ポリシー、ランタイム設定、共有、ロック、監査ログを管理できる管理コンソール',
+    ],
+    techStack: [
+      {
+        name: 'frontend',
+        items: [
+          { name: 'React 19', purpose: 'ファイルパネルと管理UI' },
+          { name: 'TypeScript', purpose: '型安全なフロントエンド開発' },
+          { name: 'Tailwind CSS 4', purpose: 'ユーティリティファーストなスタイリング' },
+          { name: 'react-router-dom 7', purpose: 'クライアントサイドルーティング' },
+          { name: 'i18next', purpose: '多言語インターフェース対応' },
+        ],
+      },
+      {
+        name: 'backend',
+        items: [
+          { name: 'Rust', purpose: '高性能バックエンドコア' },
+          { name: 'Actix-web 4', purpose: 'HTTP API とファイルサービス基盤' },
+          { name: 'SeaORM 2', purpose: 'マルチデータベース ORM レイヤー' },
+          { name: 'Tokio', purpose: '非同期ランタイム' },
+          { name: 'dav-server', purpose: 'WebDAV と DeltaV サブセット対応' },
+        ],
+      },
+      {
+        name: 'tools',
+        items: [
+          { name: 'Vite 8', purpose: 'フロントエンドビルドツール' },
+          { name: 'Bun', purpose: 'フロントエンド依存管理とスクリプト実行' },
+          { name: 'Docker', purpose: 'コンテナ化と Alpine デプロイ' },
+          { name: 'Biome', purpose: 'フロントエンドの検査と整形' },
+          { name: 'Vitest', purpose: 'フロントエンドテスト' },
+        ],
+      },
+    ],
+  },
+
   'ferrus-gate': {
     id: 'ferrus-gate',
 
@@ -562,27 +622,27 @@ export default {
     ],
   },
 
-  'uptime-verse': {
-    id: 'uptime-verse',
+  'aster-pulse': {
+    id: 'aster-pulse',
 
     tags: ['Rust', 'Distributed System', 'Monitoring', 'Uptime', 'Network'],
 
-    githubUrl: 'https://github.com/AptS-1547/uptime-verse',
+    githubUrl: 'https://github.com/AptS-1547/AsterPulse',
 
     language: 'Rust',
 
     status: 'planned',
 
     license: 'Apache-2.0',
-    title: 'Uptime Verse',
-    description: 'インターネットの鼓動を聴く分散アップタイムネットワーク',
+    title: 'AsterPulse',
+    description: '分散型アップタイム監視システム',
     longDescription:
-      'Uptime Verseは、グローバルに分散されたノード間でインターネット接続とサービス可用性を追跡するように設計された分散アップタイム監視ネットワークを目指しています。プロジェクトは初期開発段階にあり、インターネットヘルスメトリクスを追跡するために分散ノード間のアップタイムを監視することに焦点を当てています。',
+      'AsterPulseは、グローバルに分散されたノード間でインターネット接続性とサービス可用性を追跡することを目指す、計画中の分散型アップタイム監視システムです。現在のGitHubリポジトリの公式説明では uptime monitoring system とされており、まだ初期段階のプロジェクトです。',
     features: [
-      '分散アップタイム監視ネットワーク（予定）',
-      'インターネットヘルスメトリクス追跡（予定）',
-      'マルチノードサービス可用性監視（予定）',
-      'リアルタイム接続パルス監視（予定）',
+      '分散アップタイム監視アーキテクチャ（予定）',
+      '複数ノードでのサービス可用性チェック（予定）',
+      'インターネット接続性と健全性シグナルの追跡（予定）',
+      '初期段階の監視プラットフォーム検討',
     ],
   },
 }

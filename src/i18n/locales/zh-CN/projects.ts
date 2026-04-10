@@ -160,6 +160,66 @@ export default {
     ],
   },
 
+  'aster-drive': {
+    id: 'aster-drive',
+
+    tags: ['Rust', 'React', 'Self-Hosted', 'Cloud Storage', 'WebDAV', 'S3', 'SQLite'],
+
+    githubUrl: 'https://github.com/AptS-1547/AsterDrive',
+
+    language: 'Rust',
+
+    status: 'active',
+
+    license: 'MIT',
+    title: 'AsterDrive - 自托管云存储系统',
+    description: '基于 Rust 和 React 构建的自托管云存储系统',
+    longDescription:
+      'AsterDrive 是一个基于 Rust 和 React 构建的自托管云存储系统，采用单二进制交付模式，将前端面板直接嵌入服务端。项目支持多数据库、可插拔存储策略、WebDAV、公开分享、版本历史、回收站、缩略图与四种上传模式，目标是提供一套兼顾部署简洁性、扩展能力与文件协作体验的现代化存储方案。',
+    features: [
+      '单二进制交付，前端资源通过 rust-embed 嵌入 Rust 服务端',
+      '默认支持 SQLite，并可切换到 MySQL 或 PostgreSQL',
+      '支持本地文件系统与 S3 兼容对象存储的可插拔存储策略',
+      '提供 direct、chunked、presigned、presigned_multipart 四种上传模式',
+      '支持文件与文件夹分享、密码保护、过期时间和下载次数限制',
+      '内置 WebDAV 账号、根目录限制、数据库锁和 DeltaV 子集支持',
+      '包含版本历史、回收站、缩略图、资源锁和周期清理任务',
+      '提供覆盖用户、策略、运行时配置、分享、锁与审计日志的管理后台',
+    ],
+    techStack: [
+      {
+        name: 'frontend',
+        items: [
+          { name: 'React 19', purpose: '文件面板与管理界面' },
+          { name: 'TypeScript', purpose: '前端类型安全开发' },
+          { name: 'Tailwind CSS 4', purpose: '实用优先的样式系统' },
+          { name: 'react-router-dom 7', purpose: '前端路由与页面导航' },
+          { name: 'i18next', purpose: '多语言界面支持' },
+        ],
+      },
+      {
+        name: 'backend',
+        items: [
+          { name: 'Rust', purpose: '高性能后端核心' },
+          { name: 'Actix-web 4', purpose: 'HTTP API 与文件服务框架' },
+          { name: 'SeaORM 2', purpose: '多数据库 ORM 层' },
+          { name: 'Tokio', purpose: '异步运行时' },
+          { name: 'dav-server', purpose: 'WebDAV 与 DeltaV 子集支持' },
+        ],
+      },
+      {
+        name: 'tools',
+        items: [
+          { name: 'Vite 8', purpose: '前端构建工具' },
+          { name: 'Bun', purpose: '前端依赖管理与脚本运行' },
+          { name: 'Docker', purpose: '容器化与 Alpine 部署' },
+          { name: 'Biome', purpose: '前端检查与格式化' },
+          { name: 'Vitest', purpose: '前端测试' },
+        ],
+      },
+    ],
+  },
+
   'ferrus-gate': {
     id: 'ferrus-gate',
 
@@ -562,27 +622,27 @@ export default {
     ],
   },
 
-  'uptime-verse': {
-    id: 'uptime-verse',
+  'aster-pulse': {
+    id: 'aster-pulse',
 
     tags: ['Rust', 'Distributed System', 'Monitoring', 'Uptime', 'Network'],
 
-    githubUrl: 'https://github.com/AptS-1547/uptime-verse',
+    githubUrl: 'https://github.com/AptS-1547/AsterPulse',
 
     language: 'Rust',
 
     status: 'planned',
 
     license: 'Apache-2.0',
-    title: 'Uptime Verse - 分布式运行时监控',
-    description: '倾听互联网脉搏的分布式运行时网络',
+    title: 'AsterPulse - 分布式在线监控系统',
+    description: '一个分布式在线监控系统',
     longDescription:
-      'Uptime Verse 旨在成为一个分布式的运行时监控网络，设计用于跟踪全球分布式节点的互联网连接性和服务可用性。该项目处于早期开发阶段，专注于跨分布式节点监控运行时间以跟踪互联网健康指标。',
+      'AsterPulse 是一个规划中的分布式在线监控系统，目标是在全球分布式节点之间跟踪互联网连通性和服务可用性。根据当前 GitHub 仓库的官方描述，这个项目目前定位为 uptime monitoring system，整体仍处于比较早期的阶段。',
     features: [
-      '分布式运行时监控网络（计划中）',
-      '互联网健康指标跟踪（计划中）',
-      '多节点服务可用性监控（计划中）',
-      '实时连接脉搏监控（计划中）',
+      '分布式在线监控架构（计划中）',
+      '跨多节点的服务可用性检查（计划中）',
+      '互联网连通性与健康信号跟踪（计划中）',
+      '早期阶段的监控平台探索',
     ],
   },
 }

@@ -160,6 +160,66 @@ export default {
     ],
   },
 
+  'aster-drive': {
+    id: 'aster-drive',
+
+    tags: ['Rust', 'React', 'Self-Hosted', 'Cloud Storage', 'WebDAV', 'S3', 'SQLite'],
+
+    githubUrl: 'https://github.com/AptS-1547/AsterDrive',
+
+    language: 'Rust',
+
+    status: 'active',
+
+    license: 'MIT',
+    title: 'AsterDrive',
+    description: 'Self-hosted cloud storage built with Rust and React',
+    longDescription:
+      'AsterDrive is a self-hosted cloud storage system built with Rust and React. It uses a single-binary delivery model with the frontend panel embedded directly into the server, while also supporting multi-database deployments, pluggable storage policies, WebDAV, public sharing, version history, trash, thumbnails, and four upload modes. The goal is to balance simple deployment, extensibility, and a modern file collaboration experience.',
+    features: [
+      'Single-binary delivery with frontend assets embedded into the Rust server via rust-embed',
+      'SQLite by default, with MySQL and PostgreSQL support',
+      'Pluggable storage policies for local filesystem and S3-compatible object storage',
+      'Four upload modes: direct, chunked, presigned, and presigned_multipart',
+      'File and folder sharing with password protection, expiration, and download limits',
+      'Built-in WebDAV accounts, scoped root access, database-backed locks, and DeltaV subset support',
+      'Version history, trash, thumbnails, resource locks, and scheduled cleanup jobs',
+      'Admin console covering users, policies, runtime config, shares, locks, and audit logs',
+    ],
+    techStack: [
+      {
+        name: 'frontend',
+        items: [
+          { name: 'React 19', purpose: 'File panel and admin interface' },
+          { name: 'TypeScript', purpose: 'Type-safe frontend development' },
+          { name: 'Tailwind CSS 4', purpose: 'Utility-first styling system' },
+          { name: 'react-router-dom 7', purpose: 'Client-side routing and navigation' },
+          { name: 'i18next', purpose: 'Multi-language interface support' },
+        ],
+      },
+      {
+        name: 'backend',
+        items: [
+          { name: 'Rust', purpose: 'High-performance backend core' },
+          { name: 'Actix-web 4', purpose: 'HTTP API and file service framework' },
+          { name: 'SeaORM 2', purpose: 'Multi-database ORM layer' },
+          { name: 'Tokio', purpose: 'Async runtime' },
+          { name: 'dav-server', purpose: 'WebDAV and DeltaV subset support' },
+        ],
+      },
+      {
+        name: 'tools',
+        items: [
+          { name: 'Vite 8', purpose: 'Frontend build tool' },
+          { name: 'Bun', purpose: 'Frontend package management and script runner' },
+          { name: 'Docker', purpose: 'Containerization and Alpine deployment' },
+          { name: 'Biome', purpose: 'Frontend linting and formatting' },
+          { name: 'Vitest', purpose: 'Frontend testing' },
+        ],
+      },
+    ],
+  },
+
   'ferrus-gate': {
     id: 'ferrus-gate',
 
@@ -562,27 +622,27 @@ export default {
     ],
   },
 
-  'uptime-verse': {
-    id: 'uptime-verse',
+  'aster-pulse': {
+    id: 'aster-pulse',
 
     tags: ['Rust', 'Distributed System', 'Monitoring', 'Uptime', 'Network'],
 
-    githubUrl: 'https://github.com/AptS-1547/uptime-verse',
+    githubUrl: 'https://github.com/AptS-1547/AsterPulse',
 
     language: 'Rust',
 
     status: 'planned',
 
     license: 'Apache-2.0',
-    title: 'Uptime Verse',
-    description: "A distributed uptime network that listens to the internet's pulse",
+    title: 'AsterPulse',
+    description: 'A distributed uptime monitoring system',
     longDescription:
-      'Uptime Verse aims to be a distributed uptime monitoring network designed to track internet connectivity and service availability across globally distributed nodes. The project is in early development stages and focuses on monitoring uptime across distributed nodes to track internet health metrics.',
+      'AsterPulse is a planned distributed uptime monitoring system focused on tracking internet connectivity and service availability across globally distributed nodes. Based on the current GitHub repository metadata, the project is positioned as an uptime monitoring system and is still in an early stage.',
     features: [
-      'Distributed uptime monitoring network (planned)',
-      'Internet health metrics tracking (planned)',
-      'Multi-node service availability monitoring (planned)',
-      'Real-time connectivity pulse monitoring (planned)',
+      'Distributed uptime monitoring architecture (planned)',
+      'Service availability checks across multiple nodes (planned)',
+      'Internet connectivity and health signal tracking (planned)',
+      'Early-stage monitoring platform exploration',
     ],
   },
 }
